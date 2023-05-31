@@ -1,0 +1,416 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: poppins;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+
+
+}
+
+.top {
+    display: flex;
+
+}
+
+.influncer-products {
+    margin-top: 87px;
+    margin-left: 20px;
+}
+
+.right-side {
+    margin-left: 857px;
+    margin-top: 95px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.fa-magnifying-glass {
+    width: 24px;
+    height: 24px;
+}
+
+.fa-cart-shopping {
+    width: 36px;
+    height: 36px;
+}
+
+.journey {
+    display: flex;
+}
+
+.journey h1 {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.journey p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.journey-camera img {
+    margin-left: 835px;
+    margin-top: 211px;
+    margin-right: 165px;
+}
+
+.pre {
+
+    padding: 10px 24px;
+    gap: 8px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+.brands img {
+    padding: 20px;
+}
+
+
+.popular-collections {
+    margin-top: 100px;
+    margin-left: 196px;
+    margin-right: 197px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 135px;
+}
+
+.product {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px grey;
+    align-content: center;
+}
+
+/* .popular-collections .collections { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 329px;
+    height: 476px;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px 20px;
+    box-shadow: 10px 10px 40px grey;
+}
+
+
+
+.collection .thumbnail img {
+    width: 300px;
+    height: 256px;
+
+}*/
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.product {
+    display: flex;
+}
+
+
+
+.product .thumbnail img {
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled,
+.fa-star-half-stroke {
+    color: #FFC014;
+}
+
+.collection-info .description {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.see p {
+    text-align: right;
+    color: #E02C6D;
+}
+
+.flexible-container {
+    display: flex;
+}
+
+.flexible-container {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.join {
+    text-decoration: none;
+
+    padding: 10px 24px;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    background-color: #E02C6D;
+    width: 155px;
+    height: 44px;
+    color: #FFFFFF;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+.site-footer {
+    background-color: rgb(9, 9, 82);
+}
+
+footer h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+footer p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #D9DBE1;
+}
+
+.fa-instagram,
+.fa-dribbble,
+.fa-twitter,
+.fa-youtube {
+    width: 32px;
+    height: 32px;
+    color: #D9DBE1;
+}
+
+/* media queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+
+    .container,
+    .flexible-container {
+        width: 100%;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .top h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -370px;
+        ;
+    }
+
+
+    /* .journey-camera img {
+        width: 257px;
+        height: 257px;
+        align-items: center;
+        flex-direction: column;
+    } */
+
+    .journey {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+
+        align-items: center;
+        flex-direction: column-reverse;
+
+        grid-template-columns: repeat(1, 1fr);
+
+        .journey-camera img {
+            width: 257px;
+            height: 257px;
+            margin-left: -50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -390px;
+        }
+
+    }
+
+    .journey-start h1 {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .journey-start p {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .brands {
+        align-items: center;
+        flex-direction: column;
+
+        grid-template-columns: repeat(1, 1fr);
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px; */
+        margin-top: 600px;
+        margin-left: 50px;
+
+    }
+
+
+    .products {
+        align-items: center;
+        flex-direction: column;
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .half-width {
+
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+    }
+
+    .half-width img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 7040px;
+        margin-left: 30px;
+    }
+
+    .half-width h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 6600px;
+        margin-left: 30px;
+    }
+
+    .half-width p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 6700px;
+        margin-left: 30px;
+
+    }
+
+    .half-width button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 6980px;
+        margin-left: 30px;
+    }
+
+    .site-footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 360px;
+        height: 211px;
+        margin-top: 7320px;
+        margin-left: 30px;
+
+    }
+
+
+
+
+    /* Tablet devices */
+
+}
+
+@media only screen and(min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .journey,
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
